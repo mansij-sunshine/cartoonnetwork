@@ -8,9 +8,9 @@ function App() {
   const [rotate,setRotate]= useState(false)
   const [search, setSearch]=useState('');
 
-  useEffect(() => {
+  useEffect((rotate) => {
     setRotate(!rotate);
-  },[]);
+  },[rotate]);
   
   const filteredCartoons = cartoonsList.filter((cartoon)=>{
     return cartoon.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())  
