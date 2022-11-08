@@ -3,14 +3,14 @@
   height: 450px;
   background-color: burlywood;
   position:relative;
-  
+ width: 100%;
 }
 
 .mainimage{
   height:100px;
   width:170px;
   margin:auto;
-  display: block  ;
+  display: block;
 }
 
 #main-img{
@@ -19,28 +19,36 @@
   width:50%;
   opacity: 0.9;
   float:left;
-  
+  z-index: 0;
+  object-fit:fill;
 }
 
 #second-img{
+  position:absolute;
+  left:50%;
   height:450px;
   width:50%;
   opacity: 0.9;
-  float:right;
-  margin-top: -64px;
+  /* float:right; */
+  /* margin-top: -64px; */
+  z-index: 0;
+  object-fit: fill;
 }
 .container-1>strong{
   position:relative;
   top:20%;
-  left:9%;
+  left:10%;
   color: white;
   font-size: 3rem;
   z-index: 1;
-  
+  display:inline;
+  width: 50%;
+  /* overflow-y: scroll; */
+  overflow-x: auto;
+  /* overflow-wrap: break-word; */
 }
 
 .container-2{
-  
   height: 900px;
   background-color: aliceblue;
   text-align: center;
@@ -48,14 +56,15 @@
 
 .container-2 >strong{
   display: inline-block;
-  
+  font-size: 1.2rem;
 }
 
 
 
 .container-2 > input{
   display:inline-block;
-height:30px;
-width:275px;
+height:50px;
+width:375px;
 margin-left:25px;
+font-size: 1.2rem;
 }

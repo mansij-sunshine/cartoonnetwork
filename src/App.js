@@ -10,7 +10,7 @@ function App() {
 
   useEffect((rotate) => {
     setRotate(!rotate);
-  },[rotate]);
+  },[]);
   
   const filteredCartoons = cartoonsList.filter((cartoon)=>{
     return cartoon.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())  
@@ -32,11 +32,11 @@ function App() {
             <strong>Watch your childhood favourites from Cartoon Network!</strong>
             <img src="CartoonNetwork2.jpg" alt="second-img" id="second-img"/>
             </div>
-            <motion.img src="cnlogo.png" alt="main" class="mainimage" animate={{rotate:rotate?360:0}}
+            <motion.img src="cnlogo.png" alt="main" className="mainimage" animate={{rotate:rotate?360:0}}
                     transition={{type:"spring",duration:3}} onClick = {()=>{setRotate(!rotate)}}/>
             <div className="container-2">
               <strong>Find your favourite cartoons here!</strong>
-              <input type="text" placeholder='Type the cartoon name' value={test} onChange={onSearchChange}></input>
+              <input type="search" placeholder='Type the cartoon name' value={test} onChange={onSearchChange}></input>
 
 <Cartoon cartoons={filteredCartoons} />
 </div>

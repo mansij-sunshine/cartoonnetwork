@@ -6,14 +6,18 @@
     width:33%;
     display: inline-block;
     margin:auto;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: aliceblue;
   }
   
 .Cartoons>p{
     font-size:2rem;
 }  
 
-
+.Cartoons>img{
+  width:200px;
+  height:300px;
+  
+}
 
 .Cartoons>img:hover{
 transform:scale(1.2);
