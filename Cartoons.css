@@ -1,0 +1,37 @@
+
+.Cartoons{
+    /* padding-top:50px; */
+    padding-left: 5px;
+    padding-bottom: 30px;
+    width:33%;
+    display: inline-block;
+    margin:auto;
+    background-color: aliceblue;
+  }
+  
+.Cartoons>p{
+    font-size:2rem;
+}  
+
+.Cartoons>img{
+  width:200px;
+  height:300px;
+  
+}
+
+.Cartoons>img:hover{
+transform:scale(1.09);
+cursor:pointer;
+}
+
+.mbutton{
+  width:20px;
+  height:20px;
+  position:fixed;
+  left:94%;
+  top:9%;
+  margin-left:10px;
+  margin-top:-2%;
+  background-color: white;
+  border:1px solid black;
+}
